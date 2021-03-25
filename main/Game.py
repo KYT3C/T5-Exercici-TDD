@@ -35,3 +35,11 @@ class Game:
                 return "Thirty-Love"
             if self._player1Points == 3:
                 return "Forty-Love"
+        if (self._player1Points == 4) & (self._player2Points < 3):
+            return "Win for player1"
+        if (self._player2Points == 4) & (self._player1Points < 3):
+            return "Win for player2"
+        if (self._player1Points > 4) & ((self._player1Points - self._player2Points) == 2):
+            return "Win for player1"
+        if (self._player2Points > 4) & ((self._player2Points - self._player1Points) == 2):
+            return "Win for player2"
