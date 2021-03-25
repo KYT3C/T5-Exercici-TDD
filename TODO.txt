@@ -1,0 +1,5 @@
+TODO LIST
+- Test Game Start
+- Test Fifteen-all
+- Test Thirty-all
+- Test Deuce
