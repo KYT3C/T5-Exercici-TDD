@@ -21,3 +21,17 @@ class Game:
             return "Thirty-All"
         if (self._player1Points >= 3) & (self._player2Points >= 3) & (self._player1Points == self._player2Points):
             return "Deuce"
+        if self._player1Points == 0:
+            if self._player2Points == 1:
+                return "Love-Fifteen"
+            if self._player2Points == 2:
+                return "Love-Thirty"
+            if self._player2Points == 3:
+                return "Love-Forty"
+        if self._player2Points == 0:
+            if self._player1Points == 1:
+                return "Fifteen-Love"
+            if self._player1Points == 2:
+                return "Thirty-Love"
+            if self._player1Points == 3:
+                return "Forty-Love"
