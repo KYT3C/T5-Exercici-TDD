@@ -130,6 +130,18 @@ class MyTestCase(unittest.TestCase):
         result = game.get_score()
         assert result == "Fifteen-Thirty"
 
+    def test_player2_Forty_Something(self):
+        game = gameSetUp()
+        game.wins_point("Gonzalo", 3)
+        game.wins_point("Ismael", 1)
+        result = game.get_score()
+        assert result == "Forty-Fifteen"
+
+        game = gameSetUp()
+        game.wins_point("Gonzalo", 2)
+        game.wins_point("Ismael", 1)
+        result = game.get_score()
+        assert result == "Thirty-Fifteen"
 
 if __name__ == '__main__':
     unittest.main()
