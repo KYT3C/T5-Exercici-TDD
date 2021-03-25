@@ -5,5 +5,7 @@ TODO LIST
 + Test Deuce
 + Test Love-Fifteen/ Love-Thirty/ Love-Forty
 + Test Fifteen-Love / Thirty-Love/ Forty-Love
-- Player1 wins
-- Player2 wins
++ Player1 wins
++ Player2 wins
+- Fifteen-Something
+- Something-Fifteen
