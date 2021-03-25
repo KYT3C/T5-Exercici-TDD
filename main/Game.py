@@ -43,3 +43,13 @@ class Game:
             return "Win for player1"
         if (self._player2Points > 4) & ((self._player2Points - self._player1Points) == 2):
             return "Win for player2"
+        if (self._player1Points == 1):
+            if (self._player2Points == 2):
+                return "Fifteen-Thirty"
+            if (self._player2Points == 3):
+                return "Fifteen-Forty"
+        if (self._player2Points == 1):
+            if (self._player1Points == 2):
+                return "Thirty-Fifteen"
+            if (self._player1Points == 3):
+                return "Forty-Fifteen"
