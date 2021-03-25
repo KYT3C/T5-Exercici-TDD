@@ -17,10 +17,17 @@ class MyTestCase(unittest.TestCase):
 
     def test_FifteenAll(self):
         game = gameSetUp()
-        game.wins_point("Gonzalo")
-        game.wins_point("Ismael")
+        game.wins_point("Gonzalo", 1)
+        game.wins_point("Ismael", 1)
         result = game.get_score()
         assert result == "Fifteen-All"
+
+    def test_Thirty_All(self):
+        game = gameSetUp()
+        game.wins_point("Gonzalo", 2)
+        game.wins_point("Ismael", 2)
+        result = game.get_score()
+        assert result == "Thirty-All"
 
 
 
