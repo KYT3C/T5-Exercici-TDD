@@ -19,3 +19,5 @@ class Game:
             return "Fifteen-All"
         if (self._player1Points == 2) & (self._player2Points == 2):
             return "Thirty-All"
+        if (self._player1Points >= 3) & (self._player2Points >= 3) & (self._player1Points == self._player2Points):
+            return "Deuce"

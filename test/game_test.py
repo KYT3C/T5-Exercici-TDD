@@ -29,6 +29,18 @@ class MyTestCase(unittest.TestCase):
         result = game.get_score()
         assert result == "Thirty-All"
 
+    def test_Deuce(self):
+        game = gameSetUp()
+        game.wins_point("Gonzalo", 3)
+        game.wins_point("Ismael", 3)
+        result = game.get_score()
+        assert result == "Deuce"
+
+        game.wins_point("Gonzalo", 8)
+        game.wins_point("Ismael", 8)
+        result = game.get_score()
+        assert result == "Deuce"
+
 
 
 if __name__ == '__main__':
