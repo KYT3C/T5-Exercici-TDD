@@ -11,4 +11,4 @@ TODO LIST
 + Test Something-Fifteen
 + Test Player 1 Advantage
 + Test Player 2 Advantage
-- Test Forty-Thirty / Thirty-Forty
++ Test Forty-Thirty / Thirty-Forty
