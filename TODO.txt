@@ -1,5 +1,7 @@
 TODO LIST
-- Test Game Start
-- Test Fifteen-all
-- Test Thirty-all
-- Test Deuce
++ Test Game Start
++ Test Fifteen-all
++ Test Thirty-all
++ Test Deuce
+- Test Love-Fifteen/ Love-Thirty/ Love-Forty
+- Test Fifteen-Love / Thirty-Love/ Forty-Love
