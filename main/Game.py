@@ -57,3 +57,7 @@ class Game:
             return "Advantage player1"
         if (self._player2Points >= 4) & ((self._player2Points - self._player1Points) == 1):
             return "Advantage player2"
+        if (self._player1Points == 3) & (self._player2Points == 2):
+            return "Forty-Thirty"
+        if (self._player1Points == 2) & (self._player2Points == 3):
+            return "Thirty-Forty"
